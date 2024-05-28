@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Учет личных финансов</h1>
+    
+    <form id="transactionForm">
+        <input type="number" id="amount" placeholder="Сумма" required>
+        <input type="text" id="category" placeholder="Категория" required>
+        <input type="text" id="description" placeholder="Описание" required>
+        <button type="submit">Добавить транзакцию</button>
+    </form>
+    
+    <h2>Транзакции</h2>
+    <table id="transactionTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Дата и Время</th>
+                <th>Категория</th>
+                <th>Описание</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Транзакции будут добавляться здесь -->
+        </tbody>
+    </table>
+    
+    <h2>Общая сумма: <span id="totalAmount">0</span></h2>
+
+    <div id="transactionDetails">
+        <!-- Полное описание транзакции будет отображаться здесь -->
+    </div>
+
+    <script src="sq.js" type="module"></script>
+</body>
+</html>
+
